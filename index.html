@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <style>
+      div {
+        border: 2px solid gray;
+        border-radius: 8px;
+        height: 150px;
+        width: 200px;
+        padding: 30px 20px;
+        background-color: whitesmoke;
+      }
+      input {
+        border-radius: 5px;
+        background-color: white;
+        height: 30px;
+        width: 200px;
+        display: grid;
+        grid-row: 1fr 1fr;
+      }
+      button {
+        color: white;
+        background-color: rgb(66, 66, 238);
+        margin-top: 10px;
+        margin-right: 2px;
+        height: 25px;
+        width: 80px;
+        margin-left: 4px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Login</h1>
+
+      <form id="loginForm">
+        <div>
+          <input type="text" placeholder="Email" /><br />
+          <input type="text" placeholder="Password" /><br />
+          <button type="submit" id="loginBtn">Login</button>
+        </div>
+      </form>
+    </center>
+  </body>
+</html>
+
+<script>
+  const loginForm = document.getElementById("loginForm");
+
+  loginForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    alert("Login successfully completed!!!!");
+
+    window.location.href = "index.html";
+  });
+</script>
